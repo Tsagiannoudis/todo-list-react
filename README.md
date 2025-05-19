@@ -1,12 +1,46 @@
-# React + Vite
+# Η Εφαρμογή μου To-Do
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+ Μια απλή εφαρμογή λίστας υποχρεώσεων (To-Do) που επιτρέπει στους χρήστες να προσθέτουν, να διαγράφουν, να επεξεργάζονται και να επισημαίνουν ως ολοκληρωμένες τις εργασίες τους. Η εφαρμογή αποθηκεύει τις εργασίες στον τοπικό χώρο αποθήκευσης του προγράμματος περιήγησης (localStorage), ώστε να παραμένουν διαθέσιμες ακόμα και μετά την ανανέωση της σελίδας.
 
-Currently, two official plugins are available:
+ ## Χαρακτηριστικά
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+ *   Προσθήκη νέας εργασίας
+ *   Διαγραφή εργασίας
+ *   Επεξεργασία υπάρχουσας εργασίας
+ *   Εναλλαγή κατάστασης ολοκλήρωσης (ολοκληρωμένη/μη ολοκληρωμένη)
+ *   Αποθήκευση εργασιών στο localStorage για διατήρηση δεδομένων
 
-## Expanding the ESLint configuration
+ ## Τεχνολογίες που χρησιμοποιήθηκαν
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+ *   React
+ *   JavaScript
+ *   HTML
+ *   CSS (με χρήση Tailwind CSS για τα στυλ)
+ *   localStorage API
+
+## Στιγμιότυπο Οθόνης
+![Στυγμιότυπο αρχικής Οθόνης](src/screenshots/screenshot.png)
+ ------------------------------------------------------------------------------------
+
+# My To-Do App
+
+ A simple To-Do list application that allows users to add, delete, edit, and mark their tasks as completed. The application stores tasks in the browser's local storage (localStorage), so they remain available even after refreshing the page.
+
+ ## Features
+
+ *   Add a new task
+ *   Delete a task
+ *   Edit an existing task
+ *   Toggle completion status (completed/incomplete)
+ *   Save tasks to localStorage for data persistence
+
+ ## Technologies Used
+
+ *   React
+ *   JavaScript
+ *   HTML
+ *   CSS (using Tailwind CSS for styling)
+ *   localStorage API
+
+ ## Screenshots
+ ![ScreenShot](src/screenshots/screenshot.png)
