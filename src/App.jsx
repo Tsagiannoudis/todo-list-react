@@ -73,35 +73,40 @@ function App() {
         >
         </input>
         <button onClick={handleAddTodo} disabled={inputValue.trim().length === 0}>
-          
-          add
+          ➕
         </button>
         {/* --------------------------- TODO LIST --------------------------- */}
-        <ul>
+        <ul className="mt-2 w-2xl">
           {todos.map((todo, index) => (
             <li
               key={index}
               style={{
                 textDecoration: todo.completed ? "line-through" : "none",
+                display: "flex",
+                justifyContent: "space-between",
+                alignItems: "center",
               }}
+              className="rounded-2xl mb-2 bg-indigo-700"
             >
-              {todo.text}
+              <span className="ml-6">{todo.text}</span>
               {/* ------------------------buttons ------------------------- */}
-              <button onClick={() => handleEditTodo(index)} className="m-2">
-                Edit
-              </button>
-              <button onClick={() => handleDeleteTodo(index)} className="m-2">
-                delete
-              </button>
-              <button
-                onClick={(e) => {
-                  e.stopPropagation();
-                  handleToggleTodo(index);
-                }}
-                className="m-2"
-              >
-                {todo.completed ? "incomplete" : "done"}
-              </button>
+              <div className="">
+                <button onClick={() => handleEditTodo(index)} className="m-2">
+                  ✏️
+                </button>
+                <button onClick={() => handleDeleteTodo(index)} className="m-2">
+                  🗑️
+                </button>
+                <button
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    handleToggleTodo(index);
+                  }}
+                  className="m-2"
+                >
+                  {todo.completed ? "❌" : "✅"}
+                </button>
+              </div>
             </li>
           ))}
         </ul>
