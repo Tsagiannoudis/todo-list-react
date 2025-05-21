@@ -7,6 +7,7 @@ function App() {
     return storedTodos ? JSON.parse(storedTodos) : [];
   });
   const [inputValue, setInputValue] = useState("");
+  const priority = ["Low", "Medium", "High"];
   
 
   // --------------------------- HANDLERS ---------------------------
@@ -14,6 +15,9 @@ function App() {
   const handleAddTodo = () => {
     if (inputValue.trim() === "") return;
     setTodos([...todos, { text: inputValue, completed: false }]);
+
+    setTodos([...todos, { text: inputValue, completed: false, priority}]);
+
     setInputValue("");
   };
 
@@ -32,6 +36,14 @@ function App() {
       );
       setTodos(updatedTodos);
     }
+  };
+
+  // Change todo priority
+  const handleChangePriority = (index, newPriority) => {
+    const updatedTodos = todos.map((todo, i) =>
+      i === index ? { ...todo, priority: newPriority } : todo
+    );
+    setTodos(updatedTodos);
   }
 
   // Toggle todo completion
@@ -88,9 +100,23 @@ function App() {
               }}
               className="rounded-2xl mb-2 bg-indigo-700"
             >
-              <span className="ml-6">{todo.text}</span>
+              <span className="ml-6">
+                {todo.text}
+              </span>
               {/* ------------------------buttons ------------------------- */}
               <div className="">
+                <select
+                  value={todo.priority}
+                  onChange={(e) => handleChangePriority(index, e.target.value)}
+                  className="m-2">
+                    {priority.map((p) => (
+                      <option key={p} value={p} style={{
+                        backgroundColor: "black"
+                      }}>
+                        {p}
+                      </option>
+                    ))}
+                  </select>
                 <button onClick={() => handleEditTodo(index)} className="m-2">
                   ✏️
                 </button>
