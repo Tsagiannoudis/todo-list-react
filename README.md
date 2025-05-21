@@ -19,6 +19,13 @@
  *   CSS (με χρήση Tailwind CSS για τα στυλ)
  *   localStorage API
 
+ ## Μελλοντικές Βελτιώσεις
+
+ *   Προσθήκη περιγραφών για κάθε λειτουργία.
+ *   Προσθήκη υπογεργασιών.
+ *   Φιλτράρισμα και ταξινόμηση εργασιών.   
+ *   Βελτίωση του UI/UX.
+
 ## Στιγμιότυπο Οθόνης
 ![Στυγμιότυπο αρχικής Οθόνης](src/screenshots/screenshot.png)
  ------------------------------------------------------------------------------------
@@ -43,6 +50,13 @@
  *   HTML
  *   CSS (using Tailwind CSS for styling)
  *   localStorage API
+
+ ## Future Improvements
+
+ *   Add descriptions for each task.
+ *   Add subtasks.
+ *   Filtering and sorting tasks.
+ *   Improving UI/UX.
 
  ## Screenshots
  ![ScreenShot](src/screenshots/screenshot.png)
