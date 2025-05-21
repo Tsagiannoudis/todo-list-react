@@ -1,12 +1,13 @@
 # Η Εφαρμογή μου To-Do
 
- Μια απλή εφαρμογή λίστας υποχρεώσεων (To-Do) που επιτρέπει στους χρήστες να προσθέτουν, να διαγράφουν, να επεξεργάζονται και να επισημαίνουν ως ολοκληρωμένες τις εργασίες τους. Η εφαρμογή αποθηκεύει τις εργασίες στον τοπικό χώρο αποθήκευσης του προγράμματος περιήγησης (localStorage), ώστε να παραμένουν διαθέσιμες ακόμα και μετά την ανανέωση της σελίδας.
+ Μια απλή εφαρμογή λίστας υποχρεώσεων (To-Do) που επιτρέπει στους χρήστες να προσθέτουν, να διαγράφουν, να ορίζουν προτεραιότητες, να επεξεργάζονται και να επισημαίνουν ως ολοκληρωμένες τις εργασίες τους. Η εφαρμογή αποθηκεύει τις εργασίες στον τοπικό χώρο αποθήκευσης του προγράμματος περιήγησης (localStorage), ώστε να παραμένουν διαθέσιμες ακόμα και μετά την ανανέωση της σελίδας.
 
  ## Χαρακτηριστικά
 
  *   Προσθήκη νέας εργασίας
  *   Διαγραφή εργασίας
  *   Επεξεργασία υπάρχουσας εργασίας
+ *   Επεξεργασία προτεραιότητας εργασίας
  *   Εναλλαγή κατάστασης ολοκλήρωσης (ολοκληρωμένη/μη ολοκληρωμένη)
  *   Αποθήκευση εργασιών στο localStorage για διατήρηση δεδομένων
 
@@ -24,13 +25,14 @@
 
 # My To-Do App
 
- A simple To-Do list application that allows users to add, delete, edit, and mark their tasks as completed. The application stores tasks in the browser's local storage (localStorage), so they remain available even after refreshing the page.
+ A simple To-Do list application that allows users to add, delete, edit priorities, edit, and mark their tasks as completed. The application stores tasks in the browser's local storage (localStorage), so they remain available even after refreshing the page.
 
  ## Features
 
  *   Add a new task
  *   Delete a task
  *   Edit an existing task
+ *   Edit the priority of a task
  *   Toggle completion status (completed/incomplete)
  *   Save tasks to localStorage for data persistence
 
